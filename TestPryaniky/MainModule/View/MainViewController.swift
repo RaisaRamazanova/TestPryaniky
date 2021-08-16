@@ -63,6 +63,7 @@ extension MainViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
         let index = viewModel.jsonCellViewModels[indexPath[1]]
         let alert = UIAlertController(title: String(index.cellTitle), message: " Вы нажали на \(indexPath[1]+1)  ячейку", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
