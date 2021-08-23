@@ -35,6 +35,8 @@ class MainViewController: UIViewController {
         tableView.backgroundColor = UIColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
 
         tableView.register(JsonCell.nib, forCellReuseIdentifier: JsonCell.identifier)
+        tableView.register(SelectorTableViewCell.nib, forCellReuseIdentifier: SelectorTableViewCell.identifier)
+        
         view.addSubview(tableView)
     }
 
@@ -64,8 +66,8 @@ extension MainViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
-        let index = viewModel.jsonCellViewModels[indexPath[1]]
-        let alert = UIAlertController(title: String(index.cellTitle), message: " Вы нажали на \(indexPath[1]+1)  ячейку", preferredStyle: .alert)
+        let dataOfOneCell = viewModel.jsonCellViewModels[indexPath[1]]
+        let alert = UIAlertController(title: String(dataOfOneCell.cellTitle), message: " Вы нажали на \(indexPath[1]+1)  ячейку", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(okAction)
         self.present(alert, animated: true, completion: nil)
@@ -80,9 +82,19 @@ extension MainViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: JsonCell.identifier, for: indexPath) as? JsonCell else { fatalError("xib does not exists") }
-        let cellVM = viewModel.getCellViewModel(at: indexPath)
-        cell.cellViewModel = cellVM
-        return cell
+        print("CELL")
+        let dataOfOneCell = viewModel.jsonCellViewModels[indexPath[1]]
+        print("dataOfOneCell = ", dataOfOneCell)
+        if dataOfOneCell.name == "selector" {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: SelectorTableViewCell.identifier, for: indexPath) as? SelectorTableViewCell else { fatalError("xib does not exists") }
+            let cellVM = viewModel.getCellViewModel(at: indexPath)
+            cell.cellViewModel = cellVM
+            return cell
+        } else {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: JsonCell.identifier, for: indexPath) as? JsonCell else { fatalError("xib does not exists") }
+            let cellVM = viewModel.getCellViewModel(at: indexPath)
+            cell.cellViewModel = cellVM
+            return cell
+        }
     }
 }

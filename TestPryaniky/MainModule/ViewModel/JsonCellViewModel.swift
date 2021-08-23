@@ -10,6 +10,7 @@ import UIKit
 // MARK: - ViewModel structs
 
 struct JsonCellViewModel {
+    var name: String = ""
     var cellTitle: String = ""
     var imageURL: UIImageView?
 }

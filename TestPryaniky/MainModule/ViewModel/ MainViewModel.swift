@@ -51,7 +51,15 @@ class JsonViewModel: NSObject {
     
     func createCellModel(datas: Datas) -> JsonCellViewModel {
         var title = ""
+        var name = ""
         let imageURL = UIImageView()
+        print("datas = ", datas)
+        name = datas.name
+        
+        if datas.name == "selector" {
+            print("a")
+        }
+        
         if datas.data.text != nil {
             title = datas.data.text!
         }
@@ -65,7 +73,7 @@ class JsonViewModel: NSObject {
                 }
             }
         }
-        return JsonCellViewModel(cellTitle: title, imageURL: imageURL)
+        return JsonCellViewModel(name: name, cellTitle: title, imageURL: imageURL)
     }
     
     func loadImage(url: URL) -> UIImage {

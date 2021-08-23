@@ -11,6 +11,8 @@
 		BB1A60AC26C9EF5900DEB2A7 /* HttpRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A60AB26C9EF5900DEB2A7 /* HttpRequestHelper.swift */; };
 		BB1A60B026CA16C500DEB2A7 /* JsonCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A60AF26CA16C500DEB2A7 /* JsonCellViewModel.swift */; };
 		BB1A60B426CAD3D500DEB2A7 /* JsonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB1A60B326CAD3D500DEB2A7 /* JsonCell.xib */; };
+		BBCDDD0F26D3E36D004EF12D /* SelectorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCDDD0D26D3E36D004EF12D /* SelectorTableViewCell.swift */; };
+		BBCDDD1026D3E36D004EF12D /* SelectorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBCDDD0E26D3E36D004EF12D /* SelectorTableViewCell.xib */; };
 		BBF54E1726C5BE2000DFA899 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF54E1626C5BE2000DFA899 /* AppDelegate.swift */; };
 		BBF54E1B26C5BE2000DFA899 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF54E1A26C5BE2000DFA899 /* MainViewController.swift */; };
 		BBF54E2026C5BE2000DFA899 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBF54E1F26C5BE2000DFA899 /* Assets.xcassets */; };
@@ -25,6 +27,9 @@
 		BB1A60AB26C9EF5900DEB2A7 /* HttpRequestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequestHelper.swift; sourceTree = "<group>"; };
 		BB1A60AF26CA16C500DEB2A7 /* JsonCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonCellViewModel.swift; sourceTree = "<group>"; };
 		BB1A60B326CAD3D500DEB2A7 /* JsonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JsonCell.xib; sourceTree = "<group>"; };
+		BBCDDD0D26D3E36D004EF12D /* SelectorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorTableViewCell.swift; sourceTree = "<group>"; };
+		BBCDDD0E26D3E36D004EF12D /* SelectorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectorTableViewCell.xib; sourceTree = "<group>"; };
+		BBCDDD1126D451F9004EF12D /* abc.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = abc.json; sourceTree = "<group>"; };
 		BBF54E1326C5BE2000DFA899 /* TestPryaniky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestPryaniky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBF54E1626C5BE2000DFA899 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBF54E1A26C5BE2000DFA899 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +59,14 @@
 				BB1A60A926C7D4FA00DEB2A7 /* Services.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		BBCDDD0C26D3DAA7004EF12D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BBF54E1A26C5BE2000DFA899 /* MainViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		BBF54E0A26C5BE2000DFA899 = {
@@ -88,8 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				BBF54E3426C5C68700DFA899 /* JsonCell.swift */,
+				BBCDDD0D26D3E36D004EF12D /* SelectorTableViewCell.swift */,
+				BBCDDD0E26D3E36D004EF12D /* SelectorTableViewCell.xib */,
 				BB1A60B326CAD3D500DEB2A7 /* JsonCell.xib */,
-				BBF54E1A26C5BE2000DFA899 /* MainViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -98,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				BB1A60A826C7D4DD00DEB2A7 /* Services */,
+				BBCDDD0C26D3DAA7004EF12D /* Controller */,
 				BBF54E2D26C5C18600DFA899 /* ViewModel */,
 				BBF54E2C26C5C15D00DFA899 /* Model */,
 				BBF54E2A26C5C11A00DFA899 /* View */,
@@ -117,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				BBF54E3026C5C28B00DFA899 /*  MainViewModel.swift */,
+				BBCDDD1126D451F9004EF12D /* abc.json */,
 				BB1A60AF26CA16C500DEB2A7 /* JsonCellViewModel.swift */,
 			);
 			path = ViewModel;
@@ -185,6 +201,7 @@
 			files = (
 				BB1A60B426CAD3D500DEB2A7 /* JsonCell.xib in Resources */,
 				BBF54E2326C5BE2000DFA899 /* LaunchScreen.storyboard in Resources */,
+				BBCDDD1026D3E36D004EF12D /* SelectorTableViewCell.xib in Resources */,
 				BBF54E2026C5BE2000DFA899 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,6 +221,7 @@
 				BB1A60AA26C7D4FA00DEB2A7 /* Services.swift in Sources */,
 				BBF54E3526C5C68700DFA899 /* JsonCell.swift in Sources */,
 				BBF54E1726C5BE2000DFA899 /* AppDelegate.swift in Sources */,
+				BBCDDD0F26D3E36D004EF12D /* SelectorTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
