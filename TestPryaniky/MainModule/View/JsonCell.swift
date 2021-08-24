@@ -18,7 +18,7 @@ class JsonCell: UITableViewCell {
     
     var cellViewModel: JsonCellViewModel? {
         didSet {
-            titleLabel.text = cellViewModel?.cellTitle
+            titleLabel.text = cellViewModel?.titleOfCell
             productImage.image = cellViewModel?.imageURL?.image
         }
     }

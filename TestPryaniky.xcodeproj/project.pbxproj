@@ -29,7 +29,6 @@
 		BB1A60B326CAD3D500DEB2A7 /* JsonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JsonCell.xib; sourceTree = "<group>"; };
 		BBCDDD0D26D3E36D004EF12D /* SelectorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorTableViewCell.swift; sourceTree = "<group>"; };
 		BBCDDD0E26D3E36D004EF12D /* SelectorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectorTableViewCell.xib; sourceTree = "<group>"; };
-		BBCDDD1126D451F9004EF12D /* abc.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = abc.json; sourceTree = "<group>"; };
 		BBF54E1326C5BE2000DFA899 /* TestPryaniky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestPryaniky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBF54E1626C5BE2000DFA899 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBF54E1A26C5BE2000DFA899 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -132,7 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				BBF54E3026C5C28B00DFA899 /*  MainViewModel.swift */,
-				BBCDDD1126D451F9004EF12D /* abc.json */,
 				BB1A60AF26CA16C500DEB2A7 /* JsonCellViewModel.swift */,
 			);
 			path = ViewModel;

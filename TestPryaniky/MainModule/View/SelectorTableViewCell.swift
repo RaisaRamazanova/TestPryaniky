@@ -10,7 +10,17 @@ import UIKit
 class SelectorTableViewCell: UITableViewCell {
     // MARK: - properties
 
- 
+    @IBAction func firstButton(_ sender: UIButton) {
+        setOptionSelected(1)
+    }
+    @IBAction func secondButton(_ sender: UIButton) {
+        setOptionSelected(2)
+    }
+    @IBAction func thirdButton(_ sender: UIButton) {
+        setOptionSelected(3)
+    }
+    
+    
     @IBOutlet weak var firstButton: UIButton!
     @IBOutlet weak var secondButton: UIButton!
     @IBOutlet weak var thirdButton: UIButton!
@@ -25,9 +35,10 @@ class SelectorTableViewCell: UITableViewCell {
     
     var cellViewModel: JsonCellViewModel? {
         didSet {
-            firstLabel.text = cellViewModel?.cellTitle
-            secondLabel.text = cellViewModel?.cellTitle
-            thirdLabel.text = cellViewModel?.cellTitle
+            setOptionSelected((cellViewModel?.selectedVariant!) ?? 1)
+            firstLabel.text = cellViewModel?.titleOfVariants[0]
+            secondLabel.text = cellViewModel?.titleOfVariants[1]
+            thirdLabel.text = cellViewModel?.titleOfVariants[2]
         }
     }
 
@@ -52,5 +63,32 @@ class SelectorTableViewCell: UITableViewCell {
         preservesSuperviewLayoutMargins = false
         separatorInset = UIEdgeInsets.zero
         layoutMargins = UIEdgeInsets.zero
+    }
+    
+    func setOptionSelected(_ isButtonSelected:Int) {
+        if isButtonSelected == 1 {
+            buttonIsSelected(firstButton: firstButton, secondButton: secondButton, thirdButton: thirdButton)
+            labelFont(firstL: firstLabel, secondL: secondLabel, thirdL: thirdLabel)
+        }
+        if isButtonSelected == 2 {
+            buttonIsSelected(firstButton: secondButton, secondButton: firstButton, thirdButton: thirdButton)
+            labelFont(firstL: secondLabel, secondL: firstLabel, thirdL: thirdLabel)
+        }
+        if isButtonSelected == 3 {
+            buttonIsSelected(firstButton: thirdButton, secondButton: secondButton, thirdButton: firstButton)
+            labelFont(firstL: thirdLabel, secondL: secondLabel, thirdL: firstLabel)
+        }
+    }
+    
+    func labelFont(firstL: UILabel, secondL: UILabel, thirdL: UILabel) {
+        firstL.font =  firstL.font.withSize(18)
+        secondL.font =  secondL.font.withSize(16)
+        thirdL.font =  thirdL.font.withSize(16)
+    }
+    
+    func buttonIsSelected(firstButton: UIButton, secondButton: UIButton, thirdButton: UIButton) {
+        firstButton.isSelected = true
+        secondButton.isSelected = false
+        thirdButton.isSelected = false
     }
 }

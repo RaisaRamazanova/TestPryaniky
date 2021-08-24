@@ -67,7 +67,7 @@ extension MainViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
         let dataOfOneCell = viewModel.jsonCellViewModels[indexPath[1]]
-        let alert = UIAlertController(title: String(dataOfOneCell.cellTitle), message: " Вы нажали на \(indexPath[1]+1)  ячейку", preferredStyle: .alert)
+        let alert = UIAlertController(title: String(dataOfOneCell.titleOfCell), message: " Вы нажали на \(indexPath[1]+1)  ячейку", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(okAction)
         self.present(alert, animated: true, completion: nil)
@@ -82,10 +82,8 @@ extension MainViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print("CELL")
         let dataOfOneCell = viewModel.jsonCellViewModels[indexPath[1]]
-        print("dataOfOneCell = ", dataOfOneCell)
-        if dataOfOneCell.name == "selector" {
+        if dataOfOneCell.viewName == "selector" {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: SelectorTableViewCell.identifier, for: indexPath) as? SelectorTableViewCell else { fatalError("xib does not exists") }
             let cellVM = viewModel.getCellViewModel(at: indexPath)
             cell.cellViewModel = cellVM

@@ -51,29 +51,24 @@ class JsonViewModel: NSObject {
     
     func createCellModel(datas: Datas) -> JsonCellViewModel {
         var title = ""
-        var name = ""
+        var selectedId = 1
+        var titleOfVariants = [String]()
         let imageURL = UIImageView()
-        print("datas = ", datas)
-        name = datas.name
-        
+
         if datas.name == "selector" {
-            print("a")
-        }
-        
-        if datas.data.text != nil {
-            title = datas.data.text!
-        }
-        if datas.data.url != nil {
-            imageURL.image = loadImage(url: datas.data.url!)
-        }
-        if datas.data.selectedId != nil {
+            selectedId = datas.data.selectedId!
             for selectedItem in datas.data.variants! {
-                if selectedItem.id == datas.data.selectedId! {
-                    title  = selectedItem.text
-                }
+                titleOfVariants.append(selectedItem.text)
             }
         }
-        return JsonCellViewModel(name: name, cellTitle: title, imageURL: imageURL)
+        if datas.name == "picture" {
+            title = datas.data.text!
+            imageURL.image = loadImage(url: datas.data.url!)
+        }
+        if datas.name == "hz" {
+            title = datas.data.text!
+        }
+        return JsonCellViewModel(viewName: datas.name, titleOfCell: title, imageURL: imageURL, selectedVariant: selectedId, titleOfVariants: titleOfVariants)
     }
     
     func loadImage(url: URL) -> UIImage {
