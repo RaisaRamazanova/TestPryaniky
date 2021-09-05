@@ -11,36 +11,36 @@
     {
         "title": "Norveg",
         "id": 2,
-        "url": "https://www.lamoda.ru/p/mp002xu049zf/clothes-norveg-shorty/",
+        "url": "https://a.lmcdn.ru/product/M/P/MP002XU049ZF_15000577_1_v1.jpg",
         "price": "3 450 ₽",
         "description": "Шорты",
         "gender": "woman",
         "season": "summer"
     },
     {
-        "title": "Massimo Dutti",
+        "title": "Befree",
         "id": 3,
-        "url": "https://a.lmcdn.ru/product/I/X/IX001XW0127H_14657320_1_v1.jpeg",
-        "price": "2999 рублей",
-        "description": "Куртка утепленная",
+        "url": "https://a.lmcdn.ru/product/M/P/MP002XW088VQ_14771355_1_v1.jpeg",
+        "price": "2999 ₽",
+        "description": "Юбка",
         "gender": "woman",
         "season": "summer"
     },
     {
         "title": "Massimo Dutti",
         "id": 4,
-        "url": "https://a.lmcdn.ru/product/I/X/IX001XW0127H_14657320_1_v1.jpeg",
-        "price": "2999 рублей",
-        "description": "Куртка утепленная",
+        "url": "https://a.lmcdn.ru/product/I/X/IX001XW013BL_14837382_1_v3.jpeg",
+        "price": "7299 ₽",
+        "description": "Юбка",
         "gender": "woman",
         "season": "summer"
     },
     {
-        "title": "Massimo Dutti",
+        "title": "Adidas",
         "id": 5,
-        "url": "https://a.lmcdn.ru/product/I/X/IX001XW0127H_14657320_1_v1.jpeg",
-        "price": "2999 рублей",
-        "description": "Куртка утепленная",
+        "url": "https://a.lmcdn.ru/product/R/T/RTLAAK137701_14409105_1_v2_2x.jpg",
+        "price": "2999 ₽",
+        "description": "Боди",
         "gender": "woman",
         "season": "summer"
     },
