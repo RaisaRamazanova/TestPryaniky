@@ -3,7 +3,7 @@
         "title": "Massimo Dutti",
         "id": 1,
         "url": "https://a.lmcdn.ru/product/I/X/IX001XW0127H_14657320_1_v1.jpeg",
-        "price": "8 490 ₽",
+        "price": "8 490",
         "description": "Куртка утепленная",
         "gender": "woman",
         "season": "winter"
@@ -12,7 +12,7 @@
         "title": "Norveg",
         "id": 2,
         "url": "https://a.lmcdn.ru/product/M/P/MP002XU049ZF_15000577_1_v1.jpg",
-        "price": "3 450 ₽",
+        "price": "3 450",
         "description": "Шорты",
         "gender": "woman",
         "season": "summer"
@@ -21,7 +21,7 @@
         "title": "Befree",
         "id": 3,
         "url": "https://a.lmcdn.ru/product/M/P/MP002XW088VQ_14771355_1_v1.jpeg",
-        "price": "2999 ₽",
+        "price": "2999",
         "description": "Юбка",
         "gender": "woman",
         "season": "summer"
@@ -30,7 +30,7 @@
         "title": "Massimo Dutti",
         "id": 4,
         "url": "https://a.lmcdn.ru/product/I/X/IX001XW013BL_14837382_1_v3.jpeg",
-        "price": "7299 ₽",
+        "price": "7299",
         "description": "Юбка",
         "gender": "woman",
         "season": "summer"
@@ -39,7 +39,7 @@
         "title": "Adidas",
         "id": 5,
         "url": "https://a.lmcdn.ru/product/R/T/RTLAAK137701_14409105_1_v2_2x.jpg",
-        "price": "2999 ₽",
+        "price": "2999",
         "description": "Боди",
         "gender": "woman",
         "season": "summer"
@@ -48,7 +48,7 @@
         "title": "Massimo Dutti",
         "id": 6,
         "url": "https://a.lmcdn.ru/product/I/X/IX001XW0127H_14657320_1_v1.jpeg",
-        "price": "2999 рублей",
+        "price": "2999",
         "description": "Куртка утепленная",
         "gender": "woman",
         "season": "summer"
@@ -57,7 +57,7 @@
         "title": "Massimo Dutti",
         "id": 7,
         "url": "https://a.lmcdn.ru/product/I/X/IX001XW0127H_14657320_1_v1.jpeg",
-        "price": "2999 рублей",
+        "price": "2999",
         "description": "Куртка утепленная",
         "gender": "woman",
         "season": "summer"
@@ -66,7 +66,7 @@
         "title": "Massimo Dutti",
         "id": 8,
         "url": "https://a.lmcdn.ru/product/I/X/IX001XW0127H_14657320_1_v1.jpeg",
-        "price": "2999 рублей",
+        "price": "2999",
         "description": "Куртка утепленная",
         "gender": "woman",
         "season": "summer"
@@ -75,7 +75,7 @@
         "title": "Massimo Dutti",
         "id": 9,
         "url": "https://a.lmcdn.ru/product/I/X/IX001XW0127H_14657320_1_v1.jpeg",
-        "price": "2999 рублей",
+        "price": "2999",
         "description": "Куртка утепленная",
         "gender": "woman",
         "season": "summer"
