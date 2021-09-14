@@ -1,21 +1,19 @@
 [
     {
         "title": "Massimo Dutti",
-        "id": 1,
         "url": "https://a.lmcdn.ru/product/I/X/IX001XW0127H_14657320_1_v1.jpeg",
         "price": "8490",
         "description": "Куртка утепленная",
-        "gender": "woman",
-        "season": "winter"
+        "gender": "женщин",
+        "season": "зима"
     },
     {
         "title": "Norveg",
-        "id": 2,
         "url": "https://a.lmcdn.ru/product/M/P/MP002XU049ZF_15000577_1_v1.jpg",
         "price": "3450",
         "description": "Шорты",
-        "gender": "woman",
-        "season": "summer"
+        "gender": "женщин",
+        "season": "лето"
     },
     {
         "title": "Befree",
@@ -23,17 +21,16 @@
         "url": "https://a.lmcdn.ru/product/M/P/MP002XW088VQ_14771355_1_v1.jpeg",
         "price": "2999",
         "description": "Юбка",
-        "gender": "woman",
-        "season": "summer"
+        "gender": "женщин",
+        "season": "лето"
     },
     {
         "title": "Massimo Dutti",
-        "id": 4,
         "url": "https://a.lmcdn.ru/product/I/X/IX001XW013BL_14837382_1_v3.jpeg",
         "price": "7299",
         "description": "Юбка",
-        "gender": "woman",
-        "season": "summer"
+        "gender": "женщин",
+        "season": "лето"
     },
     {
         "title": "Adidas",
@@ -41,43 +38,39 @@
         "url": "https://a.lmcdn.ru/product/R/T/RTLAAK137701_14409105_1_v2_2x.jpg",
         "price": "2999",
         "description": "Боди",
-        "gender": "woman",
-        "season": "summer"
+        "gender": "женщин",
+        "season": "лето"
     },
     {
-        "title": "Massimo Dutti",
-        "id": 6,
-        "url": "https://a.lmcdn.ru/product/I/X/IX001XW0127H_14657320_1_v1.jpeg",
-        "price": "2999",
+        "title": "Sela",
+        "url": "https://a.lmcdn.ru/product/M/P/MP002XW08OR0_14969344_1_v1_2x.jpeg",
+        "price": "4139",
         "description": "Куртка утепленная",
-        "gender": "woman",
-        "season": "summer"
+        "gender": "женщин",
+        "season": "зима"
     },
     {
-        "title": "Massimo Dutti",
-        "id": 7,
-        "url": "https://a.lmcdn.ru/product/I/X/IX001XW0127H_14657320_1_v1.jpeg",
+        "title": "Zarina",
+        "url": "https://a.lmcdn.ru/product/M/P/MP002XW07S4Q_14534492_1_v2_2x.jpeg",
         "price": "2999",
-        "description": "Куртка утепленная",
-        "gender": "woman",
-        "season": "summer"
+        "description": "Джинсы",
+        "gender": "женщин",
+        "season": "лето-осень"
     },
     {
-        "title": "Massimo Dutti",
-        "id": 8,
-        "url": "https://a.lmcdn.ru/product/I/X/IX001XW0127H_14657320_1_v1.jpeg",
-        "price": "2999",
-        "description": "Куртка утепленная",
-        "gender": "woman",
-        "season": "summer"
+        "title": "Adidas",
+        "url": "https://a.lmcdn.ru/product/R/T/RTLAAN781301_14811411_1_v1.jpg",
+        "price": "7399",
+        "description": "Рубашка",
+        "gender": "женщин",
+        "season": "зима"
     },
     {
-        "title": "Massimo Dutti",
-        "id": 9,
-        "url": "https://a.lmcdn.ru/product/I/X/IX001XW0127H_14657320_1_v1.jpeg",
-        "price": "2999",
-        "description": "Куртка утепленная",
-        "gender": "woman",
-        "season": "summer"
+        "title": "Adidas",
+        "url": "https://a.lmcdn.ru/product/R/T/RTLAAP963401_15028597_1_v1_2x.jpg",
+        "price": "6999",
+        "description": "Костюм спортивный",
+        "gender": "женщин",
+        "season": "лето-осень"
     }
 ]
